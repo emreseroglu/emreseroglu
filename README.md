@@ -10,13 +10,9 @@
 <a href="mailto:emre2135samet@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 
 <br><br>
-
-<h3><code>emre@github ~ $ ./contributions.sh</code></h3>
 <img src="./contrib-heatmap.svg" width="860" alt="Contribution heatmap, auto-refreshed daily" />
 
 <br><br>
-
-<h3><code>emre@github ~ $ whoami</code></h3>
 <table>
   <tr>
     <td valign="top"><img src="./ascii-portrait.svg" width="370" alt="ASCII portrait of Emre" /></td>
@@ -27,8 +23,6 @@
 <br>
 
 </div>
-
-<div align="center"><h3><code>emre@github ~ $ ls ~/skills</code></h3></div>
 
 <p align="center" id="tech-stack">
 
