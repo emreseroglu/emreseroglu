@@ -1,0 +1,4 @@
+requests==2.32.3
+beautifulsoup4==4.12.3
+# only for the ASCII portrait (run locally, not in the workflow):
+# pillow numpy opencv-python rembg
