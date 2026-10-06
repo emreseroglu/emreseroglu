@@ -11,34 +11,39 @@ import numpy as np
 from PIL import Image, ImageOps
 
 ROOT = Path(__file__).resolve().parent.parent
-RAMP = " .`:-=+*cs#%@"          # bright (sparse) -> dark (dense)
+RAMP = " .`:-=+*cs#%@"          # sparse -> dense
 COLS = 92
 CHAR_W, CHAR_H = 4.0, 7.4        # px per glyph in the SVG (monospace ~0.55 aspect)
 W = 370
 
 
 def prep(path):
+    """returns (gray 0-255, alpha 0-255) - alpha masks out the background"""
     img = Image.open(path).convert("RGBA")
     try:
-        from rembg import remove
-        img = remove(img)
+        from rembg import new_session, remove
+        img = remove(img, session=new_session("u2net_human_seg"))
     except ImportError:
         print("rembg not installed - skipping background removal")
-    white = Image.new("RGBA", img.size, (255, 255, 255, 255))
-    gray = np.array(Image.alpha_composite(white, img).convert("L"))
+    alpha = np.array(img.split()[-1])
+    gray = np.array(img.convert("L"))
     try:
         import cv2
-        gray = cv2.createCLAHE(clipLimit=2.5, tileGridSize=(8, 8)).apply(gray)
+        gray = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8)).apply(gray)
     except ImportError:
         gray = np.array(ImageOps.autocontrast(Image.fromarray(gray), cutoff=2))
-    return Image.fromarray(gray)
+    return Image.fromarray(gray), Image.fromarray(alpha)
 
 
 def main(path):
-    img = prep(path)
+    img, alpha = prep(path)
     rows = int(COLS * img.height / img.width * (CHAR_W / CHAR_H))
     px = np.array(img.resize((COLS, rows), Image.LANCZOS)) / 255.0
-    lines = ["".join(RAMP[int((1 - v) * (len(RAMP) - 1) + 0.5)] for v in row).rstrip() for row in px]
+    al = np.array(alpha.resize((COLS, rows), Image.LANCZOS)) / 255.0
+    # light glyphs on a dark terminal: bright skin -> dense glyph, dark hair -> sparse
+    lines = ["".join(RAMP[int(v * (len(RAMP) - 1) + 0.5)] if a > 0.5 else " "
+                     for v, a in zip(prow, arow)).rstrip()
+             for prow, arow in zip(px, al)]
     while lines and not lines[0].strip(): lines.pop(0)
     while lines and not lines[-1].strip(): lines.pop()
 
