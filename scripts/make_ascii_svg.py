@@ -65,7 +65,6 @@ def main(path):
 <style>text{{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:{CHAR_W/0.6:.2f}px;fill:#c9d1d9}}</style>
 <rect width="{W}" height="{H}" rx="10" fill="#0d1117" stroke="#30363d"/>
 <circle cx="18" cy="16" r="5" fill="#ff5f56"/><circle cx="34" cy="16" r="5" fill="#ffbd2e"/><circle cx="50" cy="16" r="5" fill="#27c93f"/>
-<text x="70" y="20" style="font-size:12px;fill:#8b949e">emre@github ~ $ cat me.txt</text>
 {"".join(out)}
 <rect x="{x0}" y="{top}" width="{CHAR_W*1.6}" height="{CHAR_H}" fill="#00c2a8">
 <animate attributeName="y" values="{top};{top + len(lines)*CHAR_H}" dur="{total:.2f}s" fill="freeze"/>

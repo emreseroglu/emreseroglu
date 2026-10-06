@@ -52,7 +52,6 @@ text{{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size
 </style>
 <rect width="{W}" height="{H}" rx="10" fill="#0d1117" stroke="#30363d"/>
 <circle cx="18" cy="16" r="5" fill="#ff5f56"/><circle cx="34" cy="16" r="5" fill="#ffbd2e"/><circle cx="50" cy="16" r="5" fill="#27c93f"/>
-<text x="70" y="20" fill="#8b949e" font-size="12">emre@github ~ $ neofetch</text>
 <text class="l h" x="24" y="48" style="animation-delay:.1s">{HEADER}</text>
 <rect class="l" x="24" y="54" width="{len(HEADER)*9}" height="2" fill="#30363d" style="animation-delay:.2s"/>
 {chr(10).join(lines)}

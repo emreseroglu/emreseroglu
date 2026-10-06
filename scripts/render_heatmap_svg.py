@@ -56,7 +56,6 @@ text{{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#8b9
 </style>
 <rect width="{W}" height="{H}" rx="10" fill="#0d1117" stroke="#30363d"/>
 <circle cx="18" cy="16" r="5" fill="#ff5f56"/><circle cx="34" cy="16" r="5" fill="#ffbd2e"/><circle cx="50" cy="16" r="5" fill="#27c93f"/>
-<text x="70" y="20" class="t"><tspan class="p">emre@github</tspan> ~ $ ./contributions.sh</text>
 {''.join(months)}
 <text x="4" y="{TOP + 1*(CELL+GAP) + 10}">Mon</text>
 <text x="4" y="{TOP + 3*(CELL+GAP) + 10}">Wed</text>
