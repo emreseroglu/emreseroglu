@@ -1,7 +1,7 @@
 {
  "user": "emreseroglu",
- "total": 143,
- "current_streak": 4,
+ "total": 144,
+ "current_streak": 5,
  "longest_streak": 9,
  "best_day": {
   "date": "2026-10-06",
@@ -9,41 +9,6 @@
   "count": 21
  },
  "days": [
-  {
-   "date": "2025-10-05",
-   "level": 0,
-   "count": 0
-  },
-  {
-   "date": "2025-10-06",
-   "level": 0,
-   "count": 0
-  },
-  {
-   "date": "2025-10-07",
-   "level": 0,
-   "count": 0
-  },
-  {
-   "date": "2025-10-08",
-   "level": 0,
-   "count": 0
-  },
-  {
-   "date": "2025-10-09",
-   "level": 0,
-   "count": 0
-  },
-  {
-   "date": "2025-10-10",
-   "level": 0,
-   "count": 0
-  },
-  {
-   "date": "2025-10-11",
-   "level": 0,
-   "count": 0
-  },
   {
    "date": "2025-10-12",
    "level": 0,
@@ -1861,6 +1826,11 @@
   },
   {
    "date": "2026-10-10",
+   "level": 1,
+   "count": 1
+  },
+  {
+   "date": "2026-10-11",
    "level": 0,
    "count": 0
   }
