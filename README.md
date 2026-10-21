@@ -86,6 +86,6 @@
 
 <br>
 
-<img src="https://komarev.com/ghpvc/?username=emreseroglu&style=flat-square&color=00c2a8&label=profile+views" alt="Profile views" />
+<img src="https://hits.sh/github.com/emreseroglu.svg?view=total&style=flat-square&label=profile%20views&color=00c2a8&labelColor=555555" alt="Profile views" />
 
 </div>
