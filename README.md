@@ -9,8 +9,6 @@
 <a href="https://medium.com/@EmreEroglu"><img src="https://img.shields.io/badge/Medium-@EmreEroglu-000000?style=for-the-badge&logo=medium&logoColor=white" alt="Medium" /></a>
 <a href="mailto:emre2135samet@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 
-<br><br>
-<img src="./contrib-heatmap.svg" width="860" alt="Contribution heatmap, auto-refreshed daily" />
 
 <br><br>
 <table>
@@ -19,6 +17,9 @@
     <td valign="top"><img src="./info-card.svg" width="490" alt="About Emre" /></td>
   </tr>
 </table>
+
+<br><br>
+<img src="./contrib-heatmap.svg" width="860" alt="Contribution heatmap, auto-refreshed daily" />
 
 <br>
 
