@@ -1,7 +1,7 @@
 {
  "user": "emreseroglu",
- "total": 192,
- "current_streak": 0,
+ "total": 193,
+ "current_streak": 1,
  "longest_streak": 33,
  "best_day": {
   "date": "2026-10-06",
@@ -1836,6 +1836,11 @@
   },
   {
    "date": "2026-11-09",
+   "level": 1,
+   "count": 1
+  },
+  {
+   "date": "2026-11-10",
    "level": 0,
    "count": 0
   }
